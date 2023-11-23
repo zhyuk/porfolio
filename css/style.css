@@ -1,0 +1,129 @@
+/* 폰트 */
+@import url('https://fonts.cdnfonts.com/css/sansita-one');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css");
+
+.sansita {
+    font-family: 'Sansita One', sans-serif;
+}
+
+.pretendard {
+    font-family: "Pretendard Variable";
+    font-weight: 800;
+}
+
+.clear {
+    clear: both;
+}
+
+:root {
+    --color-green: #AAFF01;
+    --color-black: #000;
+    --color-white: #FFF;
+}
+
+#wrap {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+}
+
+body {
+    height: auto;
+    background: var(--color-black);
+    position: relative;
+    color: var(--color-green);
+}
+
+section {
+    height: calc(100vw * 1080 / 1920);
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/* header */
+header {
+    width: 100%;
+    height: calc(100vw * 80/ 1920);
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-green);
+}
+
+header #logo {
+    width: 6.25%;
+}
+
+header #logo p {
+    width: 100%;
+    font-size: calc(100vw * 35 / 1920);
+}
+
+header #nav {
+    display: flex;
+    text-transform: uppercase;
+}
+
+header #nav li {
+    margin: 0 15px;
+    font-size: calc(100vw * 30 / 1920)
+}
+
+/* main */
+#main {
+    font-size: calc(100vw * 74 / 1920);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main p {
+    width: fit-content;
+    line-height: 1.2;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+}
+
+/* about */
+/* 
+#about {border-top: solid 3px var(--color-green);}
+#about .inner {width: 80%; margin: 0 auto; margin-top: 155px; padding: 0 120px;}
+#about p {font-size: 60px; text-transform: uppercase; margin-bottom: 20px;}
+#about .profile-box {width: 30%; border: solid 4px var(--color-green); border-radius: 30px; overflow: hidden;}
+#about .profile-box img {width: 100%;}
+#about .text-box {width: 65%; height: 34%;border: solid 4px var(--color-green); border-radius: 30px; padding: 30px;}
+#about .text-box .name {font-size: 70px;}
+#about .text-box .main {font-size: 22px; font-weight: 500; line-height: 1.4;}
+
+#archive ul {width: 80%; margin: 0 auto; display: flex;}
+#archive ul li {width: calc(100% / 4); border: solid 3px var(--color-green);}
+#archive ul li:nth-of-type(1) {background-image: url(../img/archive1.png); background-size: 100%; background-repeat: no-repeat; background-position: center;} */
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 50px;
+    border-top: solid 3px var(--color-green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: calc(100vw * 24 / 1920);
+}

@@ -1,0 +1,29 @@
+/* 모바일 */
+@media all and (max-width:767px) {
+    section {
+        height: calc(100vw * 1080 / 767);
+    }
+    header {
+        height: calc(100vw * 80 / 767);
+    }
+
+    header #logo {
+        width: fit-content;
+    }
+
+    header #logo p {
+        font-size: calc(100vw * 30 / 767);
+    }
+
+    header #nav li {
+        font-size: calc(100vw * 30 / 767);
+    }
+
+    #main p {
+        font-size: calc(100vw * 48 / 767);
+    }
+
+    footer p {
+        font-size: calc(100vw * 24 / 767);
+    }
+}
