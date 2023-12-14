@@ -338,9 +338,8 @@ section {
     position: fixed;
     top: 50%;
     left: 50%;
-    z-index: 1;
     width: calc(100vw * 1500 / 1920);
-    height: calc(100vw * 800 / 1920);
+    height: 85vh;
     margin: 0 auto;
     transform: translate(-50%, -50%);
     background: var(--black);
@@ -360,9 +359,13 @@ section {
     border: none;
 }
 
-#archive #modal .inner ul {
+#archive #modal .inner .inner-text {
+    position: relative;
+    top: 50%;
+    left: 50%;
     display: flex;
     width: 100%;
+    transform: translate(-50%, -50%);
 }
 
 #archive #modal .inner li {
