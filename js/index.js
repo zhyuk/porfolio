@@ -120,4 +120,9 @@ $(function () {
         $('#modal').addClass('hide');
         $('#modal .inner').addClass('hide');
     })
+
+    $('#modal').click(function () {
+        $('#modal').addClass('hide');
+        $('#modal .inner').addClass('hide');
+    })
 })
