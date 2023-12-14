@@ -109,6 +109,10 @@ section {
 }
 
 /* about */
+#about {
+    border-top: solid 1px var(--green);
+}
+
 #about .main-title {
     margin-top: calc(100vw * 130 / 1920);
     margin-bottom: calc(100vw * 100 / 1920);
@@ -160,6 +164,8 @@ section {
     margin: calc(100vw * 15 / 1920);
     color: var(--white);
     font-size: calc(100vw * 22 / 1920);
+    cursor: pointer;
+    transition: color .5s ease-out;
 }
 
 #about .sub-nav .sub-menu li::after {
@@ -186,6 +192,7 @@ section {
     height: 100%;
     padding: 0 calc(100vw * 20 / 1920);
     overflow: scroll;
+    transition: all .5s ease-in;
 }
 
 #about .active {
@@ -270,7 +277,6 @@ section {
 #archive .archive-box {
     width: 100%;
     padding-top: 300px;
-    /* border: solid 1px blue; */
 }
 
 #archive .archive-box li {
@@ -373,10 +379,6 @@ section {
     width: 100%;
 }
 
-#archive #modal .inner .img-box a:hover .bg{
-    background: rgba(0, 0, 0, 0.5);
-}
-
 #archive #modal .inner .info-box {
     position: relative;
     padding: 0 calc(100vw * 50 / 1920);
@@ -427,8 +429,10 @@ section {
     width: 80%;
 }
 
-/* footer */
-#footer {
+
+
+/* #contact */
+#contact {
     width: 100%;
     height: calc(100vw * 500 / 1920);
     margin-top: calc(100vw * 150 / 1920);
@@ -436,56 +440,67 @@ section {
     background: var(--black);
 }
 
-#footer .inner {
+#contact .inner {
     width: calc(100vw * 1880 / 1920);
     margin: 0 auto;
     /* border: solid 1px blue; */
 }
 
-#footer .main-title {
+#contact .main-title {
     font-size: calc(100vw * 50 / 1920);
     margin-bottom: calc(100vw * 10 / 1920);
 }
 
-#footer .sub-title {
+#contact .sub-title {
     font-size: calc(100vw * 28 / 1920);
 }
 
-#footer .contact {
+#contact .contact {
     margin-top: calc(100vw * 30 / 1920);
     font-size: calc(100vw * 70 / 1920);
     line-height: calc(100vw * 80 / 1920);
 }
 
-#footer .copyright {
-    width: 100%;
-    text-align: right;
-}
-
-#footer .button-list {
+#contact .button-list {
     display: flex;
 }
 
-#footer .button-list li {
+#contact .button-list li {
     margin: calc(100vw * 30 / 1920);
     padding: calc(100vw * 20 / 1920);
     border: solid 2px var(--green);
     border-radius: calc(100vw * 30 / 1920);
 }
 
-#footer .button-list li:nth-of-type(1) {
+#contact .button-list li:nth-of-type(1) {
     margin-left: 0;
 }
 
-#footer .button-list a {
+#contact .button-list a {
+    width: 100%;
     color: var(--white);
     font-weight: 700;
 }
 
-#footer .button-list li:hover {
+#contact .button-list li:hover {
     background: var(--green);
 }
 
-#footer .button-list li:hover a {
+#contact .button-list li:hover a {
+    color: var(--black);
+}
+
+/* footer */
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: calc(100vw * 30 / 1920);
+    padding: 0 calc(100vw * 30 / 1920);
+    background: var(--green);
+}
+
+#footer .copyright {
     color: var(--black);
 }
