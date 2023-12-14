@@ -30,7 +30,7 @@ $(function () {
 
 
     // archive 영역 도착 시 배경색 변경
-    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.27 });
+    var observer = new IntersectionObserver(handleIntersection, { threshold: 0.4 });
 
     var targetElement = document.getElementById('archive');
     observer.observe(targetElement);
